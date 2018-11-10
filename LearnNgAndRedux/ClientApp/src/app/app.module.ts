@@ -9,6 +9,12 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { SearchComponent } from './search/search.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { ProductComponent } from './product/product.component';
+import { StartsComponent } from './starts/starts.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +22,13 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     NavMenuComponent,
     HomeComponent,
     CounterComponent,
-    FetchDataComponent
+    FetchDataComponent,
+    NavbarComponent,
+    FooterComponent,
+    SearchComponent,
+    CarouselComponent,
+    ProductComponent,
+    StartsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
