@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-
+  private imgurl = "http://placehold.it/320x150";
   Products: Product[];
   constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
     http.get<Product[]>(baseUrl + 'Demo/GetPrducts').subscribe(result => {
@@ -16,6 +16,7 @@ export class ProductComponent implements OnInit {
   }
 
   ngOnInit() {
+   
   }
 
 }
