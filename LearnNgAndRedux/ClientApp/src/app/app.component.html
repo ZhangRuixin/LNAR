@@ -9,19 +9,7 @@
   </div>
 </div> -->
 <app-navbar></app-navbar>
-<div class="container">
-  <div class="row">
-    <div class="col-md-3 col-lg-3 col-sm-3 ">
-      <app-search></app-search>
-    </div>
-    <div class="col-md-9 col-lg-9 col-sm-9 ">
-      <div class="row body-content">
-        <app-carousel></app-carousel>
-      </div>
-      <div class="row">
-        <app-product></app-product>
-      </div>
-    </div>
-  </div>
+<div class="container-fluid">
+  <router-outlet></router-outlet>
 </div>
-<app-footer></app-footer>
+

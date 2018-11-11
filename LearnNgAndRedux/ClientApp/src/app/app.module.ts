@@ -6,7 +6,6 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
-import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -15,12 +14,13 @@ import { SearchComponent } from './search/search.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ProductComponent } from './product/product.component';
 import { StartsComponent } from './starts/starts.component';
+import { HomeComponent } from './home/home.component';
+import { Code404Component } from './code404/code404.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavMenuComponent,
-    HomeComponent,
     CounterComponent,
     FetchDataComponent,
     NavbarComponent,
@@ -28,7 +28,9 @@ import { StartsComponent } from './starts/starts.component';
     SearchComponent,
     CarouselComponent,
     ProductComponent,
-    StartsComponent
+    StartsComponent,
+    HomeComponent,
+    Code404Component
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -38,6 +40,8 @@ import { StartsComponent } from './starts/starts.component';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
+      //放在最后面的404route
+      { path: '**', component: Code404Component }
     ])
   ],
   providers: [],
