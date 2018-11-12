@@ -38,6 +38,7 @@ import { Code404Component } from './code404/code404.component';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: 'home', redirectTo: 'home', pathMatch:'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
       //放在最后面的404route
