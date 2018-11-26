@@ -28,7 +28,7 @@ interface Product {
   price: number,
   rating: number,
   desc: string,
-  categories:string[]
+  categories:string[],
 }
 
 

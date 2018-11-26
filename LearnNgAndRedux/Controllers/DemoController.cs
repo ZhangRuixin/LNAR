@@ -9,10 +9,10 @@ namespace LearnNgAndRedux.Controllers
 {
     public class DemoController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+        //public IActionResult Index()
+        //{
+        //    return View();
+        //}
         public Product[] GetPrducts()
         {
             return new Product[]
